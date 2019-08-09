@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#DCDCDC"
+    tools:context="com.example.android.complaintapp.FormcomplaintActivity">
+
+    <ProgressBar
+        android:id="@+id/form_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/complaint_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/name_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textColor="#000000"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+
+                    android:id="@+id/rollno"
+                    android:textColor="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Roll No"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColor="#000000"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+           <RadioGroup
+               android:id="@+id/hostel"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               >
+        <RadioButton
+            android:id="@+id/radio_bh1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BH1"
+            android:textColor="#000000"
+           />
+               <RadioButton
+                   android:id="@+id/radio_bh2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="BH2"
+                   android:textColor="#000000"
+                   />
+               <RadioButton
+                   android:id="@+id/radio_bh3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="BH3"
+                   android:textColor="#000000"
+                   />
+               <RadioButton
+                   android:id="@+id/radio_gh"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="GH"
+                   android:textColor="#000000"
+                   />
+           </RadioGroup>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <AutoCompleteTextView
+
+                        android:id="@+id/roomno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Room No"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="#000000"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+
+                    android:id="@+id/number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone No"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#000000"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+
+            <RadioGroup
+                android:id="@+id/condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/emergency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emergency"
+                    android:textColor="#000000"
+                    />
+                <RadioButton
+                    android:id="@+id/nonemergency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Non Emergency"
+                    android:textColor="#000000"
+                    />
+
+            </RadioGroup>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Description"
+                    android:inputType="text"
+                    android:maxLines="6"
+                    android:singleLine="false"
+                    android:textColor="#000000"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/register"
+               android:textSize="18sp"
+                android:padding="15dp"
+                android:layout_marginTop="16dp"
+
+                android:text="Register Your Complaint"
+
+                android:textStyle="bold"
+                android:elevation="15dp"
+                android:translationZ="15dp"
+                android:stateListAnimator="@null"
+                android:textColor="#000000"
+
+                android:background="@drawable/layout_bg"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/arcade"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

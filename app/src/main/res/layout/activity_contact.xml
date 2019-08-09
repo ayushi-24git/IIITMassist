@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDC"
+    tools:context="com.example.android.complaintapp.ContactActivity">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:orientation="vertical"
+        android:background="#DCDCDC">
+        <TextView
+
+
+            style="@style/HeadingStyle"
+            android:textAlignment="center"
+            android:text="Contacts"
+
+            />
+
+        <FrameLayout
+
+            android:layout_width="290dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:elevation="15dp"
+            android:translationZ="15dp"
+            android:stateListAnimator="@null"
+            android:background="@drawable/layout_bg">
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/plumber"
+                    style="@style/CategoryStyle"
+                    android:textAlignment="center"
+                    android:text="XX:XXX"
+
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/arcade"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+
+            android:layout_width="290dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:elevation="15dp"
+            android:translationZ="15dp"
+            android:stateListAnimator="@null"
+            android:background="@drawable/layout_bg">
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/electrician"
+                    style="@style/CategoryStyle"
+                    android:textAlignment="center"
+                    android:text="XX:XXXX"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/arcade"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+
+            android:layout_width="290dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:elevation="15dp"
+            android:translationZ="15dp"
+            android:stateListAnimator="@null"
+            android:background="@drawable/layout_bg">
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/carpenter"
+                    style="@style/CategoryStyle"
+                    android:textAlignment="center"
+                    android:text="XX:XXXX"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/arcade"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </LinearLayout>
+</ScrollView>

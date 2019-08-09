@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.complaintapp">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo1"
+        android:label="HELP ME"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserActivity"
+            android:label="HELP ME"
+            />
+        <activity
+            android:name=".LoginActivity"
+            android:label="HELP ME"
+            android:parentActivityName=".UserActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.complaintapp.UserActivity" />
+        </activity>
+        <activity
+            android:name=".ServicesActivity"
+            android:label="HELP ME" />
+        <activity
+            android:name=".ContactActivity"
+            android:label="HELP ME" />
+        <activity
+            android:name=".FormcomplaintActivity"
+            android:label="HELP ME" />
+        <activity
+            android:name=".SuccessActivity"
+            android:label="HELP ME"
+            android:hardwareAccelerated="false"
+            />
+        <activity
+            android:name=".DispcomplaintsActivity"
+            android:label="HELP ME"
+            android:hardwareAccelerated="false"
+            />
+
+        <activity
+            android:name=".EntertimeActivity"
+            android:label="ComplaintApp"
+            android:hardwareAccelerated="false"
+            />
+        <activity
+            android:name=".StatustellActivity"
+            android:label="ComplaintApp"
+            android:hardwareAccelerated="false"
+            />
+
+     <!--   <service
+            android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service> -->
+    </application>
+
+
+
+</manifest>
